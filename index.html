@@ -9,161 +9,322 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 
 </head>
 <body>
-    <header>
-        <div class="container">
-        <nav class="flex items-center justify-between">
-            <div class="left flex items-center">
-                <div >
-                <img  class="branding" src="images/Untitled (5).png" alt="">
-            </div>
-          
-            <div>
-                <a href="#">Home</a>
-                <a href="#">About Me</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
-                
-            </div>
-            </div>
-            <div class="right">
-                <button class="btn btn-primary">Contact</button>
-            </div>
-        </nav>
-        <div class="hero flex items-center justify-between">
-            <div class="left flex-1 flex justify-center ">
-                <img class="imgn"  src="images/Untitled (10).png" alt="">
-            </div>
-            <div class="right flex-1">
-                <h6>Elisira Pereira </h6>
-                <h1>Front End<span><br>Web Developer</span></h1>
-                <p>Possuo uma base sólida  na area de Direito , contudo estou indo mais além, estou   obtendo cada vez mais conhecimento no ramo de pogramação, adquirindo habilidades com profissionais experientes estando em frente do desenvolvimento, codificação, e gerenciaão dos sites.</p>
-                <div>
-                    <button class="btn btn-secondary">Baixar CV </button>
-                </div>
-            </div>
+    <div class="site-main-wrapper">
+        <button class="media">
+            <img src="images/media.svg" alt=""></button>
+        <div class="mobile-nav ">
+            <button class="time"><img src="images/times (1).svg" alt=""></button>
+            <ul >
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
         </div>
-        </div>
-    </header>
-    <!--page 2(About-me)-->
-    <section class="about">
-        <div class="container flex items-center">
-            <div >
-                <img id="transicion" class="about-me-img" src="images/Untitled (7).png" alt="">
-                
-            </div>
-            <div class="right text-about-me">
-              <h1>About <span>Me</span></h1>  
-              <h3>Hello! I am Elisira Pereira</h3>
-              <p>
-                Possuo uma base sólida  na area de Direito , contudo estou indo mais além, estou   obtendo cada vez mais conhecimento no ramo de pogramação, adquirindo habilidades com profissionais experientes estando em frente do desenvolvimento, codificação, e gerenciaão dos sites.
-                Possuo uma base sólida  na area de Direito , contudo estou indo mais além, estou   obtendo cada vez mais conhecimento no ramo de pogramação, adquirindo habilidades com profissionais experientes estando em frente do desenvolvimento, codificação, e gerenciaão dos sites.
-              </p>
-              
-              <div class="social">
-                <a href="#"><img src="images/instagram.png" alt=""></a>
-
-                <a  href="#"><img src="images/facebook.png" alt=""></a>
-
-                <a id="in" href="#"><img src="images/business.png" alt=""></a>
-              </div>
-            </div>
-    
-        </div>
-    </section>
-
-    <!--Page 3 skills-->
-    <section class="services">
-        <div class="container">
-            <h1 class="section-heading"> <span>My</span>Skills</h1>
-            <p>Ampliando o conhecimento e desenvolvendo mais habilidades</p>
-            <div class="skills-front">
-                <div class="skills">
-                    <img class="img"   src="images/Untitled (13).png" alt="">
-                    <h2>HTML</h2>
-                    <p>Estruturação de  Páginas Web</p>
-                    </div>
-                    <div class="skills">
-                    <img class="img"   src="images/Untitled (15).png" alt="">
-                    <h2>CSS</h2>
-                    <p>Formatação das páginas HTML</p>
-                    </div>
-                    <div class="skills">
-                    <img class="img"   src="images/Untitled (14).png" alt="">
-                    <h2>Java-Script</h2>
-                    <p>Construção de aplicação Web e conbinação com ambiente de servidor Node  </p>
-                    </div>
-                    <div class="skills">
-                    <img class="img"    src="images/Untitled (12).png" alt="">
-                    <h2>PHP</h2>
-                    <p>Construção de sites dinâmicos e extenção de integração de aplicação </p>
-                    </div>
-
-                    <div class="skills">
-                        <img class="img"    src="images/Untitled (16).png" alt="">
-                        <h2>SQL</h2>
-                        <p>Construção de sites dinâmicos e extenção de integração de aplicação </p>
-                        </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="education">
-        <h1>EDUCATION AND TRAINING
-        </h1>
-        <button class="btn btn-primary">Download CV</button>
-
-    </section>
-    <section>
-        <section class="degree">
+        <header>
             <div class="container">
-                <h1 class="section-heading"><span>My</span> Education</h1>
-                <p>I chose to gain knowledge in various areas of teaching</p>
-                <div class="slider">
-                    <div class="slide">
-                        <img src="images/Ellipse 1 (1).png" alt="">
-                        <p>Com essas formações, adquiri uma base sólida e conhecimentos relevantes. 
-                            Todos devem ter um  objetivo e o meu é o mais óbvio de todos:actuar como profissional de excelência</p>
-                        <span>Encontro disponível para qualquer esclarecimento</span>
-                    </div>
-                    <div class="slide">
-                        <img src="images/Ellipse 1 (1).png" alt="">
-                        <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum"</p>
-                        <span>- John Doel, Company ABC</span>
-                    </div>
-                    <div class="slide">
-                        <img src="images/Ellipse 1 (1).png" alt="">
-                        <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum"</p>
-                        <span>- John Doel, Company ABC</span>
-                    </div>
-                    <div class="slide">
-                        <img src="images/Ellipse 1 (1).png" alt="">
-                        <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum"</p>
-                        <span>- John Doel, Company ABC</span>
+            <nav id="main-nav" class="flex items-center justify-between">
+                <div class="left flex items-center">
+                    <div >
+                    <img  class="branding" src="images/Untitled (5).png" alt="">
+                </div>
+              
+                <div class="time">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    
+                    
+                </div>
+                </div>
+                <!--
+                <div class="right">
+                  
+                  <a class="button"   ><span class="btn btn-primary">Contact</span></a>
+              
+                
+                </div>
+                --->
+                <div>
+                    <a class="button" href="#contact">
+                        <span >Contact</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="hero flex items-center justify-between  ">
+                <div class="left flex-1 flex justify-center imgn ">
+                 
+                    <img  src="images/Untitled (22).png" alt="">
+              
+                   
+                </div>
+                <div class="right flex-1">
+                    <div class="animated-tex" > I´m <span></span></div>
+                    <h1>Front End<span><br></span></h1>
+                    <p>Possuo uma base sólida  no ramo de Direito  contudo,estou indo mais além, obtendo cada vez mais conhecimento na área de pogramação: adquirindo habilidades com profissionais experientes.</p>
+                    <div>
+                        <button class="btn btn-secondary">Baixar CV </button>
                     </div>
                 </div>
-                <div class="slider-dots"></div>
+            </div>
+            </div>
+        </header>
+        <!--page 2(About-me)-->
+        <section id="about" class="about">
+            <div class="container flex items-center  ">
+                <div  data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="tresd">
+                    <img class="about-me-img" src="images/Untitled (24).png" alt="">
+                    
+                </div>
+                <div class="right text-about-me">
+                  <h1>About <span>Me</span></h1>  
+                  
+                  <p>
+                    Possuo uma base sólida  na area de Direito , contudo estou indo mais além, estou   obtendo cada vez mais conhecimento no ramo de pogramação, adquirindo habilidades com profissionais experientes estando em frente do desenvolvimento, codificação, e gerenciaão dos sites.
+                    Possuo uma base sólida  na area de Direito , contudo estou indo mais além, estou   obtendo cada vez mais conhecimento no ramo de pogramação, adquirindo habilidades com profissionais experientes estando em frente do desenvolvimento, codificação, e gerenciaão dos sites.
+                  </p>
+                  
+                  <div class="social">
+                    <a href="#"><img src="images/instagram.png" alt=""></a>
+    
+                    <a  href="#"><img src="images/facebook.png" alt=""></a>
+    
+                    <a id="in" href="#"><img src="images/business.png" alt=""></a>
+                  </div>
+                </div>
+        
             </div>
         </section>
-    </section>
     
-    </section>
+        <!--Page 3 skills-->
+        <section id="skills" class="services">
+            <div class="container">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+
+            </div>
+                <h1 class="section-heading"> <span>My</span>Skills</h1>
+                <p>Ampliando o conhecimento e desenvolvendo mais habilidades</p>
+                <div class="skills-front">
+                    <div class="skills">
+                        <img class="img"   src="images/Untitled (13).png" alt="">
+                    
+                        <p>Estruturação de  Páginas Web</p>
+                        </div>
+                        <div class="skills">
+                        <img class="img"   src="images/Untitled (15).png" alt="">
+                     
+                        <p>Formatação das páginas HTML</p>
+                        </div>
+                        <div class="skills">
+                        <img class="img"   src="images/Untitled (14).png" alt="">
+                        
+                        <p>Construção de aplicação Web e conbinação com ambiente de servidor Node  </p>
+                        </div>
+                        <div class="skills">
+                        <img class="img"    src="images/Untitled (12).png" alt="">
+                     
+                        <p>Construção de sites dinâmicos e extenção de integração de aplicação </p>
+                        </div>
+    
+                        <div class="skills">
+                            <img class="img"    src="images/Untitled (16).png" alt="">
+                            
+                            <p>Construção de sites dinâmicos e extenção de integração de aplicação </p>
+                            </div>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="education" class="education">
+            <h1>EDUCATION AND TRAINING
+            </h1>
+            <button class="btn btn-primary">Download CV</button>
+    
+        </section>
+        <section>
+            <section class="degree">
+                <div class="container">
+                    <h1 class="section-heading"><span>My</span> Education</h1>
+                    <p>I chose to gain knowledge in various areas of teaching</p>
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="images/Direito.png" alt="">
+                            <p>Licenciatura em Direito, Universidade Portucalense-UPT,Porto.</p><br>
+                            <span>Encontro disponível para qualquer esclarecimento</span>
+                        </div>
+                        <div class="slide">
+                            <img src="images/solicitadoria.png" alt="">
+                            <p>Licenciatura em Solicitadoria,Instituto Politecnico de Bragança-ESACT,IPB.</p><br>
+                            <span>Encontro disponível para qualquer esclarecimento</span>
+                        </div>
+                        <div class="slide">
+                            <img src="images/developer.png" alt="">
+                            <p>Formando no curso de Front END And Backend,Centro de Emprego e Formação-IEFP,Vila Nova de Gaia.</p><br>
+                            <span>Encontro disponível para qualquer esclarecimento</span>
+                        </div>
+                        <div class="slide">
+                            <img src="images/laptop.png" alt="">
+                            <p>Curso de Informática-Escola de Informática e Secretária,São Tomé e Principe.</p><br>
+                            <span>Encontro disponível para qualquer esclarecimento</span>
+                        </div>
+                    </div>
+                    <div class="slider-dots"></div>
+                </div>
+            </section>
+        </section>
+        
+        
+    
+        <section id="projects" class="projects">
+            <div class="container">
+                <h1 class="section-heading"><span>My</span>Projects</h1>
+                <p>Apresentação dos meus Projetos</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="images/Untitled (18).png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                Meu primeiro Projeto
+                            </a>
+                            <span>May 26,2024</span>
+                        </div>
+                    </div>
+    
+                    <!--Espaço entre colunas para Css:section.projects .card-wrapper{
+                    display: grid;
+                   grid-template-columns:(repeat (3, 1fr)) ;
+                   grid-gap: 3rem;}
+                   section.projects .card-wrapper .card{
+                    background: var(--pure);-->
+                   
+    
+    
+                </div>
+    
+            </div>
+           
+        </section >
+    
+        <section id="contact" class="contact">
+            <div class="container">
+                <h1 class="section-heading">Contact <span>Me</span></h1>
+                <p>Nossa jornada pode começar apenas com um clique</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img class="img-2"    src="images/smartphone-call.png" alt="">
+                        <h1>Call Me On</h1>
+                        <h6>927626301</h6>
+    
+                    </div>
+                    <div class="card">
+                        <img class="img-2" src="images/email.png" alt="">
+                        <h1>Email Me At</h1>
+                        <h6>Pereiraelisira@outlook.com</h6>
+    
+                    </div>
+    
+                    <div class="card">
+                        <img class="img-2" src="images/map.png" alt="">
+                        <h1>Visit</h1>
+                        <h6>Rua Diu 74, São Mamede de Infesta</h6>
+    
+                    </div>
+                </div>
+    
+                <form class="" action="">
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Seu Nome *">
+                        <input type="text" placeholder="Seu Email *">
+                       
+                    </div>
+                    <div class="input-wrap-2">
+                        <input type="text" placeholder="Assunto...">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Menssagem"></textarea>
+        
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-primary"> Enviar Menssagem</button>
+                    </div>
+        
+                </form>
+    
+    
+            </div>
+    
+        </section>
+       <footer>
+        <img class="footer-logo" src="images/Untitled (5).png" alt="">
+        <div class="footer-socials">
+          
+                <a href="#"><img src="images/instagram.png" alt=""></a>
+    
+                <a  href="#"><img src="images/facebook.png" alt=""></a>
+    
+                <a id="in" href="#"><img src="images/business.png" alt=""></a>
+              
+            </div>
+            <div class="direito">
+                2024 @Elisira Pereira. Todos os Direitos Reservados
+            </div>
+    
+    
+        
+       </footer>
+    
+    </div>
+   
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/app.js"></script>
+
+    <script>
+        
+VanillaTilt.init(document.querySelector(".tresd"), {
+    max: 25,
+    speed: 400
+
+    
+}
+
+);
+
+$('.js-tilt').tilt({
+    glare: true,
+    maxGlare: .5
+
+});
+    </script>
 </body>
 
 </html>

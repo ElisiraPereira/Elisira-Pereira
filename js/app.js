@@ -6,16 +6,26 @@ $(document).ready(function(){
         dotsClass:'dots'
     });  
     
-    let hamberger = document.querySelector('.hamberger');
-let times = document.querySelector('.times');
+    let midia = document.querySelector('.midia');
+let times = document.querySelector('.time');
 let mobileNav = document.querySelector('.mobile-nav');
 
-hamberger.addEventListener('click', function(){
+midia.addEventListener('click', function(){
   mobileNav.classList.add('open');  
 });
 
-times.addEventListener('click', function(){
+time.addEventListener('click', function(){
     mobileNav.classList.remove('open');  
 });
 
 });
+
+var btn= doc.querySelector(".button");
+btn.onmousemove = function(e){
+    var x = e.pageX - btn.offsetLeft;
+    var y = e.pageY - btn.offsetTop;
+
+    btn.style.setProperty('--eixoX', x + 'px')
+    btn.style.setProperty('--eixoY', y + 'px')
+}
+
