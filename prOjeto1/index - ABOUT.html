@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title class="titulo">EL-Advogados</title>
+    <style>
+        .titulo{ 
+        font-family: "Varela Round", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+            }
+    </style>
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon2/favicon-16x16.png">
+    <link rel="manifest" href="/favicon2/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+   
+</head>
+
+
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a class="sub-img" href="index.html"> <img img class="im2" src="logo.png" alt=""></a>
+            <div class="menu" id="navLinks">
+                <i id="close"    class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index - ABOUT.html">ABOUT US</a></li>
+                    <li><a href="index - SERVICES.html">SERVICES</a></li>
+                    <li><a href="index - CONTACT.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i id="close"    class="fa fa-bars"onclick="showMenu()"></i>
+
+        </nav>
+        <h1>SOBRE NÓS</h1>
+</section>
+        
+<!--about us content-->
+<section class="about-us">
+    <div class="ser-1">
+        <div class="about1">
+            <h1>
+                Uma equipa preparada para te ajudar
+            </h1>
+            <p>
+                Uma equipa compostas por advogados e mestres em Direito, com uma experiência profissional diversificada na área jurídico-privatística.
+                A diversidade da nossa actuação, permite-nos resolver os problemas com uma visão global e integrada essencial para que possamos alcançar o resultado pretendido.
+            </p>
+           <a href="index - CONTACT.html"  id="box"   class="devi red-btn  ">Contacta-nos</a>
+
+        </div>
+        <div class="about1">
+            <img src="aboutus.jpg" alt="">
+        </div>
+
+    </div>
+
+   
+
+</section>
+
+
+       
+       <!--rodape-->
+<section class="rod">
+
+    <p class="rod1">Politica   de Privacidade   Termos de Utlizaçao   Politica de Cookies 
+        <div class="icons">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+    
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+<!----------JS Menu--------->
+<script>
+    var navLinks= document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+</body>
+
+</html>

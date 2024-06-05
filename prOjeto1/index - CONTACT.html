@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title class="titulo">EL-Advogados</title>
+    <style>
+        .titulo{ 
+        font-family: "Varela Round", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+            }
+    </style>
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon2/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon2/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon2/favicon-16x16.png">
+<link rel="manifest" href="/favicon2/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+   
+</head>
+
+
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a class="sub-img" href="index.html"> <img img class="im2" src="logo.png" alt=""></a>
+            <div class="menu" id="navLinks">
+                <i  id="close"  class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index - ABOUT.html">ABOUT US</a></li>
+                    <li><a href="index - SERVICES.html">SERVICES</a></li>
+                    <li><a href="index - CONTACT.html">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+            <i id="close"  class="fa fa-bars"onclick="showMenu()"></i>
+
+        </nav>
+        <h1>CONTACTA-NOS </h1>
+</section>
+        
+<!--CONTACT US-->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d48062.00577839362!2d-8.670393523688055!3d41.15907096014082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d41.1879406!2d-8.6270636!4m5!1s0xd246526a0e5d625%3A0xe4757ef1b4971b87!2sR.%20Valente%20Perfeito%20322%2C%204400-330%20Vila%20Nova%20de%20Gaia!3m2!1d41.1323776!2d-8.6214361!5e0!3m2!1spt-PT!2spt!4v1714558495942!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+<section class="contact-us">
+
+<div class="ser-1">
+    <div class="contact-1"> 
+        <div>
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>Rua Valente Perfeito, 322</h5>
+                <p>Vila Nova de Gaia</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>00 351 938456395</h5>
+                <p>Segunda-Feira á Sexta-Feira, 9:30h ás 18:30h  </p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+                <h5>advelisiraP@outlook.com</h5>
+                <p>Email para contacto</p>
+            </span>
+        </div>
+
+    </div>
+    <div class="contact-1">
+        <form id="ContactForm" action="#" method="POST">
+        <label for="name">Nome:</label><br>
+            <input class="experimentar"     type="text"   id="name"           placeholder="Insira seu nome" required>
+            
+                <label for="email">Email:</label><br>
+            <input  class="experimentar"   type="email"  id="email"   name="email"   placeholder="Insira seu endereço de email" required>
+            
+            <label for="assunto">Assunto:</label><br>
+            <input  class="experimentar"  type="assunto" 
+            id="assunto"   name="assunto" placeholder="Insira assunto" required>
+
+            <label for="message">Menssagem:</label>
+            <textarea class="experimentar"   id="message"    rows="4"  name="message" placeholder="Menssagem"></textarea>
+            <button  class="experiment devi red-btn"      type="submit"  value="Submit">Enviar Mensagem</button>
+        </form>
+    </div>
+</div>
+</section>
+<!---JAVAS contact-->
+<script>
+    document.getElementById('ContactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        var formData = new FormData(this);
+        var data = { 
+            service_id: 'service_4cguonj', 
+            template_id: 'template_60sl1ru', 
+            user_id: 'ltkoj5D1tvKYeDSpi', 
+            template_params: { 
+                'username': formData.get('name'), 
+                'email': formData.get('email'), 
+                'assunto': formData.get('assunto'),
+                'message': formData.get('message')
+            }
+        };
+        
+        fetch('https://api.emailjs.com/api/v1.0/email/send', { 
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json' 
+            },
+            body: JSON.stringify(data) 
+        })
+        .then(function(response) { 
+            if (response.ok) { 
+                alert('Your mail is sent!'); 
+            } else {
+                alert('Enviado ' + response.statusText); 
+            }
+        })
+        .catch(function(error) { 
+            alert('Erro no envio' + error);
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+       
+       <!--rodape-->
+       <section class="rod">
+
+        <p class="rod1">Politica   de Privacidade   Termos de Utlizaçao   Politica de Cookies 
+            <div class="icons">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+        
+            </div>
+        </section>
+    
+
+
+
+<!----------JS Menu--------->
+<script>
+    var navLinks= document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+</body>
+
+</html>
