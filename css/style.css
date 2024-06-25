@@ -1886,3 +1886,11 @@ background-color: var(--dark);
     margin-bottom:2rem ;
     border-radius: 20px;
 }
+
+
+@media (max-width: 1024px) {
+    .btn {
+        /* margin: 2rem; */
+        margin-top: 10rem;
+    }
+}
