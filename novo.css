@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    background-color: #cc990e;
+}
+
+nav{
+    background-color: #18929D;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.cor{
+    
+}
+nav li{
+    margin-left: 7px;
+}
+nav li a{
+    margin-left: 570px;
+    text-decoration: none;
+    color: rgb(25,25,28),(circle, rgba(25,25,28,0.9865125240847784) 0%, rgba(231,233,148,1) 40%);
+    font-size: 30px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+nav li a:hover{
+    background-color: rgb(51, 45, 45);
+    color: rgb(183, 185, 43);
+}
+.banner{
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('./nova-imagens/jogos.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.7;
+}
+.texto .titulo{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.texto .sub_titulo{
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.botoes {
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    margin-left: 350px;
+}
+ .botoes button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+   
+}
+.botoes button.n-overlay{
+    color: white;
+    background: none;
+    border: 2px solid white;
+}
+.botoes button.n-overlay:hover{
+    color: black;
+    background-color: white;
+}
+ .botoes button.overlay{
+    background: white;
+    color: black;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+@keyframes vibrar {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+
+
+.game-board{
+    width: 100%;
+    height: 600px;
+    border-bottom: 20px solid #5acc0e;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, rgb(136, 136, 197)
+    );
+}
+
+.nuvens{
+
+    width: 500px;
+    position: absolute;
+    animation: clouds 20s infinite linear;
+    top:0;
+
+}
+
+.torre{
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+    right: -90px;
+     animation: torreanimation 4s infinite linear;
+    
+}
+
+
+.mario{
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+   
+
+ 
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+@keyframes torreanimation{
+    from{
+
+        right: -90px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes jump{
+
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 250px;
+    }
+    50%{
+        bottom: 250px;
+    }
+    60%{
+        bottom: 250px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes clouds{
+
+    from{
+        right: -550px;
+
+    }
+    to{
+        right: 100%;
+    }
+}
+
+
+@media (max-width:576px){
+   .banner{
+    
+      height: 100vh;
+     width: 100%;
+    
+    }
+
+    .banner1{
+            display: flex;
+            justify-content: center;
+    }
+
+    .sub_titulo{
+       
+        word-wrap: break-word;
+    }
+
+    .botoes{
+        
+        margin-top: 30px;
+        display: flex;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        
+    }
+}
+
+@media (max-width:576px){
+    .game-board{
+        height: 100vh;
+        width: 100%;
+     }
+    .nuvens{
+        margin-top: 11rem;
+    }
+ }
+
+ @media (max-width:1024px){
+
+    .banner{
+    
+        height: 100vh;
+       width: 100%;
+      
+      }
+  
+      .banner1{
+              display: flex;
+              justify-content: center;
+      }
+  
+      .sub_titulo{
+         
+          word-wrap: break-word;
+      }
+  
+      .botoes{
+          
+          margin-top: 30px;
+          display: flex;
+          text-align: center;
+          margin-right: 20rem;   
+      }
+      .bot{
+        width: 20rem;
+        height: 20rem;
+      } 
+
+      h2 {
+        display: none;
+      }
+  
+   h1{
+    font-size: 3rem;
+    }
+    }
